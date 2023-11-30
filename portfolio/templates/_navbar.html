@@ -1,0 +1,37 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg" style="background-color: #00AFF0;">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'portfolio/imagenes/logo_escuela.png' %}" alt="Logo de Mi Sitio Web" style="width: 40px; height: auto;">
+        </a>        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:posts' %}" style="color: white;">Noticias</a>
+          </li>
+          {% if user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link" href="/profile" style="color: white;">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout" style="color: white;">Salir</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a href="/signin" class="nav-link" style="color: white;" >Iniciar sesion</a>
+          </li>
+          <li class="nav-item">
+            <a href="/signup" class="nav-link" style="color: white;">Registrate</a>
+          </li> 
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>

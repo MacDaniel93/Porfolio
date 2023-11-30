@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CURSOS EN LINEA ULEAM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+  .columna-derecha {
+    max-width: 494px;
+    width: 100%;
+    background-image: url("{% static 'portfolio/imagenes/imagen segunda plua.jpeg' %}");
+    background-size: cover;
+    background-position: center;
+    margin-left: 31px;
+    border-radius: 1vw;
+  }
+
+  .columna-izquierda .imagen {
+    height: 520px;
+    width: 100%;
+    background-image: url("{% static 'portfolio/imagenes/imagen primera plua.jpeg' %}");
+    background-size: cover;
+    background-position: center;
+    margin-right: 31px;
+    border-radius: 1vw;
+  }
+
+  .columna-derecha .imagen{
+    background-image: url("{% static 'portfolio/imagenes/edicion vi.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    margin-right: 31px;
+    border-radius: 1vw;
+    width: 100%;
+  }
+
+  .left-container {
+    background-image: url("{% static 'portfolio/imagenes/playota.jpg' %}");
+    background-size: cover; 
+    }
+
+    .right-container {
+    background-image: url("{% static 'portfolio/imagenes/salita.jpg' %}");
+    background-size: cover; 
+    }
+</style>
+
+<body class="cuerpo">
+    
+    <div class="imagen_1">
+        <!--<button class="rectangulo-izquierdo"><img src="imagenes/51258.png" style="position: relative; width: 30px; height: 30px; padding-left: 20%; transform: rotate(180deg);transform-origin: right;"></button>-->
+        <img src="{% static 'portfolio/imagenes/balonmano principal.jpg' %}">
+        <!--<button class="rectangulo-derecho"><img src="imagenes/51258.png" style="position: relative; width: 30px; height: 30px; padding-left: 40%;"></button>-->
+        <div class="capa-de-oscurecimiento"></div>
+        <button class="boton-sobre-imagen">INSCRIBETE</button>
+        <div class="texto-sobre-boton"><strong>VIVE EL DEPORTE EN PRIMERA MANO, SÉ PROTAGONISTA</strong></div>
+        <div class="rectangulo-izquierdo"></div>
+        <div class="rectangulo-derecho"></div>
+    </div>
+
+    <div class="cuadro-post-imagen">
+        <div class="boton-izquierdo">Mas cursos</div>
+        <div class="boton-derecho">Contactanos</div>
+    </div>
+    <br><br><br>
+
+    <div class="quienes-somos">
+      <div class="columna-izquierda">
+        <div class="contenedor-superior">
+            <div class="titulo">DESTACA EN LO QUE TE GUSTA</div>
+            <div class="texto">Encuentra cursos de todo tipo en este repositorio de la ULEAM<br> 
+            desde campos tecnologicos hasta artisticos.</div>
+            <button class="boton">MAS CURSOS</button> 
+        </div>
+        <div class="contenedor-inferior">
+        <div class="imagen"></div><!-- Contenido de la columna izquierda -->
+        </div>
+    </div>
+    <div class="columna-derecha">
+        <div class="imagen"></div>
+    </div>
+</div>
+    <br><br>
+
+    <div class="horariosynoticias">
+        <section class="titulobalonmano">
+            <div class="textobalonmano"><h1>NUESTRA PASIÓN, EL BALONMANO</h1></div>
+        </section>
+    </div>
+
+    <div class="containerdos">
+      <div class="left-container">
+        <div class="imagecon">
+            <div class="text-containercon">
+                <div class="textcon">BALONMANO PLAYA</div>
+            </div>
+        </div>
+        <div class="info">
+            <div>
+                <p><h2>HORARIOS DE ENTRENAMIENTO</h2></p><br>
+                <p><h3>Lunes y miercoles:</h3></p><p>Playa murcielago, Cancha del Murcielago</p><p>de 16:00 a 18:00 pm</p><br>
+                <h3>Viernes:</h3><p>Playa del espigon</p><p>de 16:00 a 18:00 pm</p>
+            </div>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="imagecon">
+            <div class="text-containercon">
+                <div class="textcon">BALONMANO SALA</div>
+            </div>
+        </div> 
+        <div class="info">
+            <div>
+                <p><h2>HORARIOS DE ENTRENAMIENTO</h2></p><br>
+                <p><h3>Martes y jueves:</h3></p><p>Parque La Aurora</p><p>de 16:00 a 18:00 pm</p><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="contenedor3">
+      <img src="{% static 'portfolio/imagenes/imagentorneo.jpeg' %}" alt="Imagen" id="imagen3">
+      <div id="contenido3">
+          <p id="texto3">NOTICIAS</p>
+          <button id="boton3">VER MAS</button>
+      </div>
+  </div>
+    <div id="pie3">
+      <div id="seccion3">
+          <p id="texto-seccion3">-    Torneo  internacional de balonmano playa llevado a cabo en la playa murcielago en Manta entre el 25 al 28 de mayo del 2023</p>
+      </div>
+  </div>
+
+    <div class="containepatrocinios">
+      <div class="titlepa">ALIADOS Y PATROCINIOS</div>
+      <div class="image-containerpa">
+          <div class="inner-containerpa">
+              <img src="{% static 'portfolio/imagenes/mantaprokoko.png' %}" alt="Imagen 1">
+          </div>
+          <div class="inner-containerpa">
+              <img src="{% static 'portfolio/imagenes/dbosonovo.png' %}" alt="Imagen 2">
+          </div>
+          <div class="inner-containerpa">
+              <img src="{% static 'portfolio/imagenes/mantaalcaldia.png' %}" alt="Imagen 3">
+          </div>
+      </div>
+  </div>
+    
+    <div class="footer">
+        <img class="logotipo" src="{% static 'portfolio/imagenes/logo_escuela.png' %}" alt="Logotipo Grande">
+        <img class="imagenes-pequenas" src="{% static 'portfolio/imagenes/face.png' %}" alt="Imagen Pequeña 1">
+        <img class="imagenes-pequenas" src="{% static 'portfolio/imagenes/tiktok.png' %}" alt="Imagen Pequeña 2">
+        <img class="imagenes-pequenas" src="{% static 'portfolio/imagenes/insta.png' %}" alt="Imagen Pequeña 3">
+        <img class="imagenes-pequenas" src="{% static 'portfolio/imagenes/youtubes.png' %}" alt="Imagen Pequeña 4">
+        <div class="clear"></div>
+    </div>
+   
+</body>
+</html>
+
+
+{% endblock %}
