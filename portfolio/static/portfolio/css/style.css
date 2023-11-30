@@ -234,7 +234,6 @@ header {
 .mas-cursos .columna-izquierda2 .imagen2{
     height: 740px;
     width: 100%;
-    background-image: url('imagenes/android.jpg');
     background-size: cover;
     background-position: center;
     margin-right: 31px;
@@ -244,7 +243,6 @@ header {
 .mas-cursos .columna-derecha2 .imagen2{
     height: 520px;
     width: 100%;
-    background-image: url('imagenes/JavaScript_logo.png');
     background-size: cover;
     background-position: center;
     margin-right: 31px;
