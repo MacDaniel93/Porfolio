@@ -1,18 +1,12 @@
-{% extends 'layout.html' %}
-
-{% block content %}
+{% extends 'layout.html' %} {% block content %}
 
 <div class="text-center">
+  <h2>{{post.title}}</h2>
+  <h3 class="my-2 h5 text-muted" > {{post.date|date:'F jS Y'|upper}}</h3>
 
-  <h1>{{post.title}}</h1>
-  <h2 class="my-2 h5 text-muted">{{post.date|date:'F jS Y'}}</h2>
-
-  <img src="{{post.image.url}}" alt="{{post.title}}" class="img-fluid">
-
-
+  <img src="{{post.image.url}}" alt=" {{post.title}} " class="img-fluid" />
   <div class="my-4">
-
-  {{post.description|safe}}
+    <p>{{post.description|safe}}</p>
   </div>
 </div>
 
