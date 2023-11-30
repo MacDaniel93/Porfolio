@@ -10,8 +10,5 @@ pip install --upgrade pip
 
 DJANGO_SUPERUSER_PASSWORD=12345 python manage.py createsuperuser --no-input --username=Julio  --email=joe@example.com
 
-python manage.py makemigrations
-
-
 python manage.py collectstatic --no-input
 python manage.py migrate
